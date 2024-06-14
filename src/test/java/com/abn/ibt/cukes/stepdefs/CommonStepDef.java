@@ -10,6 +10,8 @@ public class CommonStepDef {
 
   public CommonStepDef(SharedState state) {
     System.out.println("Inside : CommonStepDef constructor");
+    System.out.println(
+        "Inside : CommonStepDef constructor: shared state variable :" + state.toString());
     this.sharedState = state;
   }
 

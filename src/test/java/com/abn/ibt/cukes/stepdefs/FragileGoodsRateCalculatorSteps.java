@@ -9,13 +9,15 @@ public class FragileGoodsRateCalculatorSteps {
 
   public FragileGoodsRateCalculatorSteps(CommonStepDef commonSteps, SharedState state) {
     System.out.println("Inside : FragileGoodsRateCalculatorSteps constructor");
+    System.out.println(
+        "Inside : FragileGoodsRateCalculatorSteps constructor: shared state variable :" + state.toString());
     this.commonSteps = commonSteps;
     this.sharedState = state;
   }
 
   @When("calculating the rate of the shipment for fragile goods")
   public void calculateFragileGoods() {
-    System.out.println("Inside : FragileGoodsRateCalculatorSteps: calculateFragileGoods: share state variables: " + sharedState.toString());
+    System.out.println("Inside : FragileGoodsRateCalculatorSteps: calculateFragileGoods: shared state variables: " + sharedState.toString());
     //Some logic to calculate the rate
     sharedState.setActualRate("30");
   }
