@@ -17,7 +17,7 @@ public class FragileGoodsRateCalculatorSteps {
 
   @When("calculating the rate of the shipment for fragile goods")
   public void calculateFragileGoods() {
-    System.out.println("Inside : FragileGoodsRateCalculatorSteps: calculateFragileGoods: shared state variables: " + sharedState.toString());
+    System.out.println("Inside : FragileGoodsRateCalculatorSteps: calculateFragileGoods: Setting Actual Rate: 30");
     //Some logic to calculate the rate
     sharedState.setActualRate("30");
   }

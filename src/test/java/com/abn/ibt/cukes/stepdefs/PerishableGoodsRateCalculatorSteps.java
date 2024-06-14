@@ -16,8 +16,8 @@ public class PerishableGoodsRateCalculatorSteps {
 
   @When("calculating the rate of the shipment for perishable goods")
   public void calculatePerishableGoods() {
-    System.out.println("Inside : PerishableGoodsRateCalculatorSteps: calculateFragileGoods: shared state variables: " + sharedState.toString());
-    sharedState.setActualRate("30");
+    System.out.println("Inside : PerishableGoodsRateCalculatorSteps: calculateFragileGoods: Setting Actual Rate: 50");
+    sharedState.setActualRate("50");
 
   }
 }
